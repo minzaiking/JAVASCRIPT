@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+<style>
+body{background-color:#efe5d0;}
+
+header{background-color: #e3afed; color:#000000; text-align:left;}
+
+section#main{float:right; background-color:rgb(221, 158, 23); width:80%;}
+
+nav{float:left; background-color:#ffd800; width:20%}
+
+footer{background-color:#954b4b; color:efe5d0; 
+       text-align: center; clear: both; text-align: right;}
+</style>
+</head>
+<body>
+
+    <header>
+       <h1>겜이득</h1> <br>
+       <h2> 알면 이득이 되는 게임에 대한 정보를 모았다! </h2>
+       <p>
+       아이디: <input type="id" name="id"> <br>
+       비밀번호: <input type="password" name="password"> <br>
+       <input type="submit" value="로그인">
+       </p>
+    </header>
+
+    <nav>
+       <h1>올해의 수상작</h1>
+       <ul>
+         <li><a href="https://baldursgate3.game/" target="_blank" >BALDUR'S GATE 3</a><br>
+             <img src="img file/발더게.jpg" width="150px" height="150px">
+        </li>
+         
+        <li><a href="https://www.alanwake.com/ko/" target="_blank">ALAN WAKE 2</a><br>
+            <img src="img file/wake2.jpg" width="150px" height="150px">
+        </li>
+        
+        <li><a href="https://insomniac.games/game/marvels-spider-man-2/" target="_blank">MARVEL'S SPIDER-MAN 2</a><br>
+            <img src="img file/spider2.jpg" width="150px" height="150px">
+        </li>
+        
+        <li><a href="https://www.nintendo.co.kr/switch/aqmxa/" target="_blank">SUPER MARIO BROS. WONDER</a>
+            <br><img src="img file/bros.jpg" width="150px" height="150px">
+        </li>
+        
+        <li><a href="https://www.nintendo.co.kr/zelda/totk/" target="_blank">ZELDA: TEARS OF THE KINGDOM </a>
+            <br><img src="img file/zelda.jpg" width="150px" height="150px">
+        </li>
+        
+        <li><a href="https://store.steampowered.com/app/254700/Biohazard_4_2005/" target="_blank">RESIDENT EVIL 4</a>
+            <br><img src="img file/evil4.jpg" width="150px" height="150px">
+        </li>
+       </ul>
+    </nav>
+
+    <section id="main">
+        <article>
+            <h1> 어떤 게임이 나랑 잘 맞을까? </h1>
+            <p> 게임에 대한 장르에 대한 소개부터 공통적으로 사용되는 용어까지 정리되어 있습니다.</p>
+            <a href="textpage.html" target="_blank"> <button>바로가기</button> </a>
+        </article>
+        <article>
+            <h1> 더 이상 스트레스는 그만! </h1>
+            <p> 즐기려고 하는 게임인데 스트레스 받으시나요? 게임에 도움이 되는 각종 사이트들도 정리 해 놓았습니다. </p>
+            <a href="link.html" target="_blank"> <button>바로가기</button> </a>
+        </article>
+        <article>
+            <h1> 이게 게임이었다고? </h1>
+            <p> 당신이 좋아하는 영화, 애니메이션, 책들이 게임으로 나왔을 수 있습니다. 혹은 그 반대일 수도 있죠. 대표적인 것들로 추려 보았습니다. </p>
+            <a href="videopage.html" target="_blank"> <button>바로가기</button> </a>
+        </article>
+        <article style="background-color: aquamarine;">
+            <h1 style="background-color: aquamarine;">추천 게임 6선 할인 소식! 12월 4일-11일 오전10시 Steam 기준</h1>
+            <img src="img file/punk.jpg" id="image" width="1300px" height="700px">
+            <script>
+                let num=0;
+                function show(){
+                if(num==0){document.getElementById("image").src="img file/sea.jpg"; num=1; width="1300px"; height="700px";}
+                
+                else if(num==1){document.getElementById("image").src="img file/party.jpg"; num=2; width="1300px"; height="700px";}
+                
+                else if(num==2){document.getElementById("image").src="img file/hunter.jpg"; num=3; width="1300px"; height="700px";}
+                
+                else if(num==3){document.getElementById("image").src="img file/hades.jpg"; num=4; width="1300px"; height="700px";}
+                
+                else if(num==4){document.getElementById("image").src="img file/cells.jpg"; num=5; width="1300px"; height="700px";}
+                
+                else{document.getElementById("image").src="img file/punk.jpg"; num=0; width="1300px"; height="700px";}
+                
+                setTimeout('show()',2000);
+                }
+                
+                show();
+                </script>
+            </article>
+    </section>
+    <footer>20201921 김민재 제작</footer>
+</body>
+</html>
